@@ -1,1 +1,3 @@
-# curso-padroes
+# Estructural patterns
+
+Adapter
