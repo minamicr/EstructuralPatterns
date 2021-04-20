@@ -13,6 +13,8 @@ public class ReportService {
 	}
 
 	public void getSumary(Card card) {
+		System.out.println("=============================================");
+		System.out.println(card.toString());
 		List<Register> registers = registerService.getRegistersByCard(card);
 		for(Register reg: registers) {
 			System.out.println(String.format("%s\t%.2f\t%s", 
@@ -21,6 +23,7 @@ public class ReportService {
 					reg.getDate().toString()
 					));
 		}
+		System.out.println("=============================================");
 	}
 
 }
