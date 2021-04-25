@@ -8,7 +8,7 @@ import br.com.cod3r.flyweight.map.game.Map;
 
 public class Client {
 
-	public static void main(String[] args) throws IOException, InterruptedException {
+	public static void main(String[] args) throws IOException, InterruptedException, Exception {
 		Map map = new Map();
 		Integer score = 0;
 		Integer reward;
