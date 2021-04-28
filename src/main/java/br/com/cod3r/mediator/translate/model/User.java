@@ -26,11 +26,11 @@ public abstract class User {
 
 	public void sendMessage(String message, User to) {
 		String receiverName = to != null ? to.getName() : "ALL";
-		System.out.println(String.format("'%s' is sending the message '%s' to '%s'", name, message, receiverName));
+		System.out.println(String.format("'%s' (%s) is sending the message '%s' to '%s'", name, language.getAbreviation(), message, receiverName));
 		mediator.sendMessage(message, to, this);
 	}
 	
 	public void receiveMessage(String message, User from) {
-		System.out.println(String.format("'%s' has recieved the message '%s' from '%s'", name, message, from.getName()));
+		System.out.println(String.format("'%s' (%s) has recieved the message '%s' from '%s'", name, language.getAbreviation(), message, from.getName()));
 	}
 }
