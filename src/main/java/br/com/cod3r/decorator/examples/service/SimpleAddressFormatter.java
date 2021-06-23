@@ -2,10 +2,11 @@ package br.com.cod3r.decorator.examples.service;
 
 import br.com.cod3r.decorator.examples.model.Address;
 
-public class SimpleIAddressFormatter implements IAddressFormatter {
+public class SimpleAddressFormatter implements IAddressFormatter {
 
   @Override
   public String prepareAddress(Address address) {
+    System.out.println("Simple");
     StringBuilder sb = new StringBuilder();
     sb.append("\n");
     sb.append(address.street);

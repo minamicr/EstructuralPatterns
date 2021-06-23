@@ -2,12 +2,10 @@ package br.com.cod3r.decorator.examples.service;
 
 import br.com.cod3r.decorator.examples.model.Address;
 
-public class UpperCaseIAddressFormatter implements IAddressFormatter {
-  IAddressFormatter addressFormatter;
+public class UpperCaseAddressDecorator extends AddressDecorator {
 
-  public UpperCaseIAddressFormatter(IAddressFormatter addressFormatter){
-    super();
-    this.addressFormatter = addressFormatter;
+  public UpperCaseAddressDecorator(IAddressFormatter addressFormatter) {
+    super(addressFormatter);
   }
 
   @Override
